@@ -1004,6 +1004,32 @@ height: 174px;
 
 @media (min-width: 996px){
   .InEvidenzia{
+    max-height: 543.46px;
+    .layout-btn-aggiungi {
+      opacity: 0; 
+      max-height: 0; 
+      visibility: hidden; 
+      padding: 0; 
+      transition: opacity 0.3s ease-in, max-height 0.3s ease-in; 
+    }
+    
+    .layoutCard {
+      position: relative; 
+    }
+    
+    .layoutCard:hover .layout-btn-aggiungi {
+      opacity: 1;
+      max-height: 500px;
+      visibility: visible; 
+      padding: 10px; 
+    }
+  
+    .btn-aggiungi{
+      transition: 0.2s ease-in-out;
+    }
+    .btn-aggiungi:hover{
+      background-color: var(--color-primary);
+    }
     .layoutCard{
       .image{
         width: 100%;
@@ -1041,17 +1067,17 @@ height: 174px;
 
  /* RowCard2 */
 
+ 
+ .btn-aggiungi{
+  background-color: var(--color-secondary);
+  border-radius: 100px;
+  padding: 0.5rem 1rem;
+  color: white;
+}
+
  .RowCard2{
   .left{
     left: 14px;
-  }
-
-  
-  .btn-aggiungi{
-    background-color: var(--color-secondary);
-    border-radius: 100px;
-    padding: 0.5rem 1rem;
-    color: white;
   }
 
   .fiore{
@@ -1131,7 +1157,6 @@ height: 174px;
 
 
 
-
 @media (min-width: 992px){
   .categoriaImage{
     img{
@@ -1166,13 +1191,10 @@ height: 174px;
     .btn-aggiungi:hover{
       background-color: var(--color-primary);
     }
-
-
     
   }
-
-  
 }
+
 
 @media (min-width: 1200px){
   .categoriaImage{
@@ -1332,7 +1354,7 @@ height: 174px;
   .accordion-button:not(.collapsed) .accordion-icon {
     transform: rotate(180deg); /* Ruota la freccia quando espanso */
   }
-  
+
   .custom-accordion-button {
     display: flex;
     align-items: center;
