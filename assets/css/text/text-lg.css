@@ -1,0 +1,49 @@
+
+.lg-line-height-26{
+    line-height: 26px;
+}
+
+.lg-medium{
+    font-weight: 500;
+}
+
+
+.lg-bold{
+    font-weight: 700;
+}
+
+.lg-text-800{
+    font-weight: 800;
+}
+
+.lg-text-10{
+    font-size:0.625rem;
+}
+
+.lg-text-12{
+    font-size:0.75rem;
+}
+
+.lg-text-14{
+    font-size:0.875rem;
+}
+
+.lg-text-14-4{
+    font-size:0.9rem;
+}
+
+.lg-text-12{
+    font-size: 0.75rem;
+}
+
+.lg-text-16{
+    font-size: 1rem;
+}
+
+.lg-text-18{
+    font-size: 1.125rem;
+}
+
+.lg-text-21{
+    font-size: 1.313rem;
+}
