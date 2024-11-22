@@ -1,0 +1,335 @@
+@import url(./costants.css);
+
+
+
+@font-face {
+ font-family: 'Plein';
+ src: url(../font/TTF/Plein-Variable.ttf);
+font-style: normal;
+font-weight: 300;
+font-display: swap;
+
+}
+
+html, body {
+ margin:0;
+ padding: 0;
+ box-sizing: border-box; 
+ font-family: 'Plein','bold' sans-serif;
+}
+
+.primary{
+ color: var(--color-primary);
+}
+
+.eggshell{
+ color: var(--color-eggshell);
+}
+
+.orange{
+ color:var(--color-orange);
+}
+
+.bg-primary{
+ background-color: var(--color-primary) !important;
+}
+
+.bg-eggshell{ 
+ background-color: var(--color-eggshell);
+}
+
+.bg-format{
+ background-color: var(--color-format);
+}
+
+.bg-orange{
+ background-color: var(--color-orange);
+}
+
+.bg-yellow-white{
+ background-color: var(--color-yellow-white);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.plein{
+    font-family: 'Plein', sans-serif;
+    font-weight: 400;
+}
+
+
+
+/* TESTO */
+
+.line-height-26{
+    line-height: 26px;
+}
+
+.medium{
+    font-weight: 500;
+}
+
+
+.bold{
+    font-weight: 700;
+}
+
+.text-800{
+    font-weight: 800;
+}
+
+.text-10{
+    font-size:0.625rem;
+}
+
+.text-12{
+    font-size:0.75rem;
+}
+
+.text-14{
+    font-size:0.875rem;
+}
+
+.text-14-4{
+    font-size:0.9rem;
+}
+
+.text-12{
+    font-size: 0.75rem;
+}
+
+.text-16{
+    font-size: 1rem;
+}
+
+.text-18{
+    font-size: 1.125rem;
+}
+
+
+.text-21{
+    font-size: 1.313rem;
+}
+
+
+
+/* Border */
+
+
+.border-radius-4{
+    border-radius: 5px;
+}
+
+.border-radius-5{
+    border-radius: 5px;
+}
+
+.border-radius-24{
+    border-radius: 24px;
+}
+
+.border-up-radius-24{
+    border-radius: 24px 24px 0 0;
+}
+
+.border-down-radius-24{
+    border-radius: 0 0 24px 24px;
+}
+
+
+.border-radius-100{
+    border-radius: 100px;
+}
+
+.border-up-radius-100{
+    border-radius: 100px 100px 0 0;
+}
+
+.border-down-radius-100{
+    border-radius: 0 0 100px 100px;
+}
+
+
+/* PADDING */
+
+
+
+
+
+
+
+/* $padding-values: (4, 8, 16, 24, 32); // Valori desiderati */
+
+
+
+/* Icone */
+.icon{
+    width: 24px; 
+    height: 24px; 
+    background-size: contain;  
+    background-repeat: no-repeat;  
+    background-position: center; 
+    display: inline-block;
+}
+
+.icon-left-chevron{
+    background-image: url("../img/icon/green/Chevron-1.svg");
+}
+
+.icon-right-chevron{
+    background-image: url("../img/icon/green/Chevron.svg");
+}
+
+.icon-left-chevron-disabled{
+    background-image: url("../img/icon/green/Chevron-1.svg");
+    opacity: 0.2;
+}
+
+.icon-right-chevron-disabled{
+    background-image: url("../img/icon/green/Chevron.svg");
+    opacity: 0.2;
+}
+
+
+
+.icon-discover{
+    background-image: url("../img/icon/pagamenti/Discover.svg");
+}
+.icon-maestro{
+    background-image: url("../img/icon/pagamenti/maestro.svg");
+}
+.icon-masterCard{
+    background-image: url("../img/icon/pagamenti/masterCard.svg");
+}
+.icon-paypal{
+    background-image: url("../img/icon/pagamenti/paypal.svg");
+}
+.icon-visa{
+    background-image: url("../img/icon/pagamenti/visa.svg");
+}
+.icon-sda{
+    background-image: url("../img/icon/pagamenti/Sda.svg");
+}
+
+
+
+
+
+
+.icon-fiori-orange{
+    background-image: url("../img/icon/menu/Fiori.svg");
+}
+
+.icon-animaliCortile-orange{
+    background-image: url("../img/icon/menu/Animali_cortile.svg");
+}
+
+.icon-animali-orange{
+    background-image: url("../img/icon/menu/Animali.svg");
+}
+
+.icon-frutta-orange{
+    background-image: url("../img/icon/menu/Frutta.svg");
+}
+
+.icon-piante-orange{
+    background-image: url("../img/icon/menu/Piante.svg");
+}
+
+.icon-semi-orange{
+    background-image: url("../img/icon/menu/Mangimi_Semi.svg");
+}
+
+
+
+
+.icon-shopCart-white{
+    background-image: url("../img/icon/white/ShoppingCart.svg");
+    opacity: 1;
+}
+
+.icon-vector-white{
+    background-image: url("../img/icon/white/Vector.svg");
+}
+
+.icon-phone-white{
+    background-image: url("../img/icon/white/PhoneReceiverSilhouette.svg");
+}
+
+
+.icon-email-white{
+    background-image: url("../img/icon/white/Email.svg");
+}
+
+
+
+
+.icon-FastDelivery-green{
+    background-image: url("../img/icon/green/Fastdelivery.svg");
+}
+
+.icon-RightChevron-green{
+    background-image: url("../img/icon/green/DownChevron.svg");
+}
+
+.icon-email-green{
+    background-image: url("../img/icon/green/Email.svg");
+}
+
+.icon-emailEmpty-green{
+    background-image: url("../img/icon/green/EmailEmpty.svg");
+}
+
+.icon-whatsapp-green{
+    background-image: url("../img/icon/green/Whatsapp.svg");
+}
+
+.icon-Phone-green{
+    background-image: url("../img/icon/green/PhoneReceiverSilhouette.svg");
+}
+
+.icon-Headset-green{
+    background-image: url("../img/icon/green/CustomerServiceHeadset.svg");
+}
+
+.icon-right-chevron-empty-green{
+    background-image: url("../img/icon/green/UPchevron.svg");
+   
+ }
+
+
+.icon-facebook-black{
+    background-image: url("../img/icon/pagamenti/FacebookBlack.svg");
+}
+
+.icon-instagram-black{
+    background-image: url("../img/icon/pagamenti/InstagramBlack.svg");
+}
+
+
+.icon-30{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+
+
+/* GRANDEZZE */
+.w-33{
+    width: 1/3;
+}
+
+
+.size-18{
+    width: 18px;
+    height: 18px;
+}
