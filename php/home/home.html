@@ -51,31 +51,31 @@
   <!-- Modal -->
   <div class="modal fade left-menu" id="ModalOfferte" tabindex="-1" aria-labelledby="ModalOfferteLabel"
     aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal-dialog h-100">
+      <div class="modal-content ">
         <div class="modal-header">
           <img src="./assets/img/Logo.png">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="d-flex flex-column gap-3 w-100">
-            <div class="d-flex align-content-center gap-2" id="detailsFerramenta"><img
+          <div class="d-flex flex-column gap-3 gap-lg-4 w-100">
+            <div class="d-flex align-content-center gap-2 info-menu" id="detailsFerramenta"><img
                 src="./assets/img/icon/menu/Settings.svg"> Ferramenta</div>
-            <div class="d-flex align-content-center gap-2"><img src="./assets/img/icon/menu/Toolkit.svg">Utensili</div>
-            <div class="d-flex align-content-center gap-2 "><img src="./assets/img/icon/menu/Frutta.svg">Fertilizzanti
+            <div class="d-flex align-content-center gap-2 info-menu"><img src="./assets/img/icon/menu/Toolkit.svg">Utensili</div>
+            <div class="d-flex align-content-center gap-2 info-menu"><img src="./assets/img/icon/menu/Frutta.svg">Fertilizzanti
             </div>
-            <div class="d-flex align-content-center gap-2 giardinaggio"><img src="./assets/img/icon/menu/Fiori.svg">
+            <div class="d-flex align-content-center gap-2 giardinaggio info-menu"><img src="./assets/img/icon/menu/Fiori.svg">
               <div>Giardinaggio <span>clicca qui</span></div>
             </div>
-            <div class="d-flex align-content-center gap-2"><img src="./assets/img/icon/menu/Bugs.svg">Insetticidi</div>
-            <div class="d-flex align-content-center gap-2"><img src="./assets/img/icon/menu/Animali.svg">Linea PET e
+            <div class="d-flex align-content-center gap-2 info-menu"><img src="./assets/img/icon/menu/Bugs.svg">Insetticidi</div>
+            <div class="d-flex align-content-center gap-2 info-menu"><img src="./assets/img/icon/menu/Animali.svg">Linea PET e
               Mangimi</div>
-            <div class="d-flex align-content-center gap-2"><img src="./assets/img/icon/menu/Ornitologia.svg">Zootecnica
+            <div class="d-flex align-content-center gap-2 info-menu"><img src="./assets/img/icon/menu/Ornitologia.svg">Zootecnica
             </div>
           </div>
-          <div class="d-flex flex-column buttons">
-            <div><span class="evidenzia">In Evidenzia</span></div>
-            <div><span class="offerta">In Offerta</span></div>
+          <div class="py-3 ">
+            <div class="py-3 "> <span class="bg-primary py-2 px-3 text-white text-18 border-radius-4 pointer buttons"> In Evidenzia</span></div>
+            <div class="py-2 "> <span class="bg-orange py-2 px-3 text-white text-18 border-radius-4 pointer buttons">In Offerta</span></div>
           </div>
           <div class="offerte d-flex flex-column gap-3 pt-3 w-100 d-lg-none">
             <div>Offerte a Pacchetto</div>
@@ -83,13 +83,14 @@
             <div>Best Seller</div>
             <div>SPECIAL BLACK FRIDAY</div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <div class="menu-infu d-flex flex-column gap-2 w-100 pt-3">
+          <div class="menu-infu d-flex flex-column gap-2 w-100">
             <div>Acquista per Brand</div>
             <div>Blog Come Fare</div>
             <div>Contatti</div>
           </div>
+        </div>
+        <div class="modal-footer">
+
         </div>
       </div>
     </div>
@@ -106,10 +107,16 @@
           <div class="loginDe">
             <div class="d-block text-center title"> Accedi </div>
             <div>
-              <form class="form d-flex flex-column">
-                <div><input type="text"><img src="./assets/img/icon/login/email.svg" alt="email"></div>
-                <div><input type="text"><img src="./assets/img/icon/login/Lock.svg" alt="password"></div>
-              </form>
+              <form class="form ">
+                <div class="d-block" >
+                  <label class="bold" for="nome ">Nome</label>
+                  <div class="input"><input type="text" placeholder="Mario"><img src="./assets/img/icon/login/email.svg" alt="email"></div>
+                </div>
+                <div class="d-block mt-2">
+                  <label class="bold">Email</label>
+                  <div class="input"><input type="text" placeholder="email@indirizzo.com"><img src="./assets/img/icon/login/Lock.svg" alt="password"></div>
+                </div>
+             </form>
             </div>
             <div class="buttons d-flex flex-row justify-content-between">
               <div class="passwordDimenticata">Password Dimenticata?</div>
@@ -119,10 +126,10 @@
               <div><img src="./assets/img/icon/login/search.svg" alt=""></div>
               <div>Accedi con Google</div>
             </div>
-          </div>
+          </div>-
         </div>
         <div class="modal-footer registrati ">
-          <div>Non hai ancora un account? <span>Registrati QUI!</span></div>
+          <div>Non hai ancora un account? <span class="pointer"> Registrati QUI!</span></div>
         </div>
       </div>
     </div>
@@ -133,17 +140,25 @@
   <header class=" header bg-primary">
     <nav class="container eggshell d-flex flex-column gap-2 p-2">
       <div class="d-flex justify-content-between info">
-        <div>
-          <span class="text-10 lg-text-14-4">+39 1234567890</span>
-          <span class="text-10 ps-2">customer@agriden.com</span>
+        <div class="info-head d-flex flex-row gap-2">
+          <div class="d-inline d-flex align-items-center">
+            <span class="icon icon-phone-white"></span>
+            <span class="text-10 lg-text-14-4 d-inline">+39 1234567890</span>
+          </div>
+          <div class="d-inline d-flex align-items-center">
+            <span class="icon icon-email-white"></span>
+            <span class="text-10 lg-text-14-4 d-inline ps-1">customer@agriden.com</span>
+          </div>
+
+
         </div>
         <div class="iconbar">
           <span class="d-none d-md-inline pt-2 pe-1">SEGUICI SU</span>
           <figure class="d-inline">
-            <img class="icon" src="./assets/img/icon/white/Facebook.svg" alt="facebook" />
+            <img class="icon pointer" src="./assets/img/icon/white/Facebook.svg" alt="facebook" />
           </figure>
           <figure class="d-inline">
-            <img class="icon" src="./assets/img/icon/white/instagram.svg" alt="instagram" />
+            <img class="icon pointer" src="./assets/img/icon/white/instagram.svg" alt="instagram" />
           </figure>
         </div>
       </div>
@@ -164,13 +179,13 @@
         </form>
         <div class="icon-left d-flex justify-content-end personal">
           <figure class="d-inline">
-            <img class="icon" data-bs-toggle="modal" data-bs-target="#loginModal"
+            <img class="icon pointer" data-bs-toggle="modal" data-bs-target="#loginModal"
               src="./assets/img/icon/white/farmer.svg" alt="farmer" />
-            <img class="d-none d-md-inline arrow_down" src="./assets/img/icon/white/Down chevron.svg" alt="farmer" />
+            <img class="d-none d-md-inline arrow_down pointer" data-bs-toggle="modal" data-bs-target="#loginModal" src="./assets/img/icon/white/Down chevron.svg" alt="farmer" />
           </figure>
           <figure class="d-inline position-relative">
             <div class="bollino d-flex align-items-center justify-content-center"><span class="text-12 bold">1</span></div>
-            <img class="icon ms-2" src="./assets/img/icon/white/trolley.svg" alt="trolley" />
+            <img class="icon ms-2 pointer" src="./assets/img/icon/white/trolley.svg" alt="trolley" />
           </figure>
         </div>
       </div>
@@ -225,36 +240,76 @@
 
   <!-- slides -->
   <section class="slides  bg-yellow-white  py-3 pb-lg-1">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="d-flex flex-column gap-3 flex-lg-row">
             <div class="image d-flex flex-column flex-md-row gap-3 ">
-              <div class="slide1"></div>
-              <div class="slide2"></div>
-            </div>
-            <div class="offerte d-flex flex-column gap-3 flex-sm-row flex-lg-column">
-              <div class="container card bg-orange w-sm-50">
-                <div class="row">
-                  <div class="col-7">
-                    <h2>Selezione riscaldamento</h2>
-                    <span>Le nostre soluzioni per un autunno accogliente</span>
+              <div class="slide1">
+                <div class="swiper mySwiper-slide1  w-100 h-100">
+                  <div class="swiper-wrapper  w-100 h-100">
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img1  w-100 h-100 border-radius-24"></div>
                   </div>
-                  <div class="col-5">
-                    <img class="annunci-slide" src="./assets/img/carosello1-desk.png" alt="carosello" />
-                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                 </div>
               </div>
-              <div id="offerta" class="container card bg-orange w-sm-50">
-                <div class="row">
-                  <div class="col-7">
-                    <h2>Offerta speciale della settimana</h2>
-                    <span>Selezione a tempo limitato</span>
+              <div class="slide2">
+                <div class="swiper mySwiper-slide2  w-100 h-100">
+                  <div class="swiper-wrapper  w-100 h-100">
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
+                    <div class="swiper-slide img2  w-100 h-100 border-radius-24"></div>
                   </div>
-                  <div class="col-5">
-                    <img class="annunci-slide" src="./assets/img/carosello1-desk.png" alt="carosello" />
-                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
                 </div>
+              </div>
+            </div>
+            <div class=" offerte d-flex flex-column gap-3 flex-sm-row flex-lg-column">
+              <div class="swiper mySwiper-slide3  w-100">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+              <div class="swiper mySwiper-slide4  w-100">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                  <div class="swiper-slide bg-orange border-radius-24"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
               </div>
             </div>
           </div>
@@ -269,7 +324,7 @@
 
   <!-- PrezziMigliori -->
   <section class="prezziMigliori py-4">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="layout">
@@ -299,7 +354,7 @@
 
   <!-- InEvidenzia -->
   <section class="InEvidenzia mt-3 mb-lg-5 ">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="title d-flex text-16 lg-text-21 bold">
@@ -314,14 +369,13 @@
                     <!-- <img src="./assets/img/imageExample.png" alt=""> -->
                   </div>
                   <div class="description">
-                    <span class="d-block text-16 bold">Terriccio Universale</span>
-                    <span class="d-block text-16 bold">GEOLIA 45 it</span>
-                    <span class="d-block text-21 bold  pt-1">3.99€</span>
-                    <span class="d-block flex align-items-center"><img class="pe-2"
-                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span></span>
-                    <div class="bg-orange shoptCart d-flex justify-content-center align-items-center">
-                      <span class="icon icon-shopCart-white "></span>
-                    </div>
+                    <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                      src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                    </span>
+                    <span class="d-block text-16 bold text-center">Terriccio Universale</span>
+                    <span class="d-block text-16 bold text-center">GEOLIA 45 it</span>
+                    <span class="d-block text-21 bold  pt-1 text-center">3.99€</span>
+
                   </div>
 
                 </div>
@@ -400,7 +454,7 @@
   </section>
 
   <section class="pubblicita1 mb-lg-5">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
 
@@ -409,8 +463,8 @@
     </div>
   </section>
 
-  <section class="RowCard2 mt-3 bg-yellow-white">
-    <div class="container">
+  <section class="RowCard2 pt-3 pb-4 bg-yellow-white">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="title d-flex text-16 bold pt-5 d-flex justify-content-between mb-2">
@@ -431,73 +485,122 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 position-relative pt-lg-2"> <span class="orange ">5.99€</span> <del
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
                           class="primary text-14-4">10.99€</del> <span
-                          class="bg-orange text-white text-12 p-1 percentuale"> 33%</span></span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white ">
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
@@ -513,7 +616,7 @@
   </section>
 
   <section class="RowCard2 pt-3 pb-4 bg-yellow-white">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="title d-flex text-16 bold pt-5 d-flex justify-content-between mb-2">
@@ -532,77 +635,132 @@
                     <img src="./assets/img/img1.png" alt="">
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 position-relative pt-lg-2"> <span class="orange">5.99€</span> <del
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
                           class="primary text-14-4">10.99€</del> <span
-                          class="bg-orange text-white text-12 p-1 percentuale"> 33%</span></span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide layoutCard bg-white">
+
+                <div class="swiper-slide layoutCard bg-white pointer">
                   <div class="cards d-flex flex-column ">
                     <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
                     <div class="descrizione">
-                      <span class="d-block text-16 bold">Terriccio COMPO Sana universale 10L</span>
-                      <span class="d-block text-21 text-800 pt-lg-2">5.99€</span>
-                      <span class="d-block text-12 bold d-flex align-items-center"><img class="pe-2"
-                          src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery">Ricevilo in 2/3
-                        Giorni</span>
-                      <div class="w-100 position-relative shoptCart">
-                        <div class="bg-orange  d-flex justify-content-center align-items-center">
-                          <span class="icon icon-shopCart-white "></span>
-                        </div>
-                      </div>
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
                     </div>
                   </div>
                 </div>
-              </div>
+
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide layoutCard bg-white pointer">
+                  <div class="cards d-flex flex-column ">
+                    <div class="image" style="background-image: url('./assets/img/imageExample.png');"></div>
+                    <div class="descrizione">
+                      <span class="d-block flex align-items-center text-center"><img class="pe-2"
+                        src="./assets/img/icon/green/Fastdelivery.svg" alt="fastDelivery"><span class="bold text-12">Ricevilo in 2/3 Giorni</span>
+                      </span>
+                      <span class="d-block text-16 bold text-center">Terriccio COMPO Sana universale 10L</span>
+                      <span class="d-block text-21 text-800 position-relative pt-lg-2 text-center"> <span class="orange ">5.99€</span> <del
+                          class="primary text-14-4">10.99€</del> <span
+                          class="bg-orange text-white text-12 p-1 border-radius-5 "> 33%</span></span>
+                    </div>
+                    <div class="text-center py-2 layout-btn-aggiungi">
+                      <span class="btn-aggiungi text-16 medium pointer">Aggiungi</span>
+                    </div>
+                  </div>
+                </div>
+
               <div class="d-lg-none swiper-button-next"></div>
               <div class="d-lg-none swiper-button-prev"></div>
             </div>
@@ -615,7 +773,7 @@
 
   <!-- Pubblicità -->
   <section class="pubblicita pt-2 pt-lg-5 ">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="d-flex flex-column flex-lg-row  gap-4 w-100">
@@ -630,7 +788,7 @@
   <!-- Semi -->
 
   <section id="commenti">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="title d-flex align-items-center pt-4 gap-3 ps-1">
@@ -645,7 +803,7 @@
 
   <!-- Recensioni -->
   <section class="banner pb-5">
-    <div class="container">
+    <div class="container-fluid container-md">
       <div class="row">
         <div class="col-12">
           <div class="title d-block py-3 ps-1">
@@ -721,39 +879,66 @@
           <button class="submit border-radius-100 text-16 bold mt-3" type="submit">ISCRIVITI ORA</button>
         </form>
       </div>
-      <div class="d-md-flex flex-md-row justify-content-between gap-lg-4">
-        <div class="servizioClienti ">
-          <span class="text-16 bold pb-3 d-block pt-4">Servizio Clienti</span>
-          <div><span class="icon icon-Phone-green "></span><span class="text-14-4  medium ps-2 ">1234567890</span>
-          </div>
-          <div><span class="icon icon-whatsapp-green"></span><span class="text-14-4  medium ps-2">1234567890</span>
-          </div>
-          <div><span class="icon icon-email-green"></span><span
-              class="text-14-4  medium ps-2">customer@agriden.it</span></div>
-          <div><span class="icon icon-email-green"></span><span class="text-14-4  medium ps-2">info@agriden.it</span>
-          </div>
-          <div><span class="icon icon-Headset-green"></span><span class="text-14-4  medium ps-2">09:00-18:30</span>
+      <div class="mt-3 mt-0 d-flex flex-column gap-3  flex-md-row justify-content-between gap-lg-4">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <div class="accordion-button collapsed d-flex align-items-center d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <span class="bold text-16">Servizio Clienti</span>
+              <span class="icon icon-right-chevron-empty-green chevron ms-2 mt-1 accordion-icon d-md-none"></span>
+            </div>
+            <div class="d-none d-md-flex align-items-center">
+              <span class="bold text-16">Servizio Clienti</span>
+            </div>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse d-md-block servizioClienti" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFooter1">
+            <div><span class="icon icon-Phone-green"></span><span class="text-14-4 medium ps-2">1234567890</span></div>
+            <div><span class="icon icon-whatsapp-green"></span><span class="text-14-4 medium ps-2">1234567890</span></div>
+            <div><span class="icon icon-email-green"></span><span class="text-14-4 medium ps-2">customer@agriden.it</span></div>
+            <div><span class="icon icon-email-green"></span><span class="text-14-4 medium ps-2">info@agriden.it</span></div>
+            <div><span class="icon icon-Headset-green"></span><span class="text-14-4 medium ps-2">09:00-18:30</span></div>
           </div>
         </div>
-        <div>
-          <span class="text-16 bold pb-2 d-block pt-4">Informativa</span>
-          <div class=" my-1"><span class="inter text-14-4">Condizioni Generali di Vendita</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Consegna e Trasporto</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Cambi e Resi</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Preferenze Cookie</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Privacy Policy</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Cookie Policy</span></div>
-          <div class=" my-1"><span class="inter text-14-4">Privacy Policy Newsletter</span></div>
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <div class="accordion-button collapsed d-flex align-items-center d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <span class="bold text-16">Informativa</span>
+              <span class="icon icon-right-chevron-empty-green chevron ms-2 mt-1 accordion-icon d-md-none"></span>
+            </div>
+            <div class="d-none d-md-flex align-items-center">
+              <span class="bold text-16">Informativa</span>
+            </div>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse d-md-block" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFooter1">
+            <div class="my-1"><span class="inter text-14-4">Condizioni Generali di Vendita</span></div>
+            <div class="my-1"><span class="inter text-14-4">Consegna e Trasporto</span></div>
+            <div class="my-1"><span class="inter text-14-4">Cambi e Resi</span></div>
+            <div class="my-1"><span class="inter text-14-4">Preferenze Cookie</span></div>
+            <div class="my-1"><span class="inter text-14-4">Privacy Policy</span></div>
+            <div class="my-1"><span class="inter text-14-4">Cookie Policy</span></div>
+            <div class="my-1"><span class="inter text-14-4">Privacy Policy Newsletter</span></div>
+          </div>
         </div>
-        <div>
-          <span class="text-16 bold pb-3 d-block pt-4">Dati Azienda</span>
-          <div class="my-1"><span class="d-block inter text-14-4">AGRIDEN</span><span>Via Bitonto,43,70026 Modugno
+        
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <div class="accordion-button collapsed d-flex align-items-center d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <span class="bold text-16">Dati Azienda</span>
+              <span class="icon icon-right-chevron-empty-green chevron ms-2 mt-1 accordion-icon d-md-none"></span>
+            </div>
+            <div class="d-none d-md-flex align-items-center">
+              <span class="bold text-16">Dati Azienda</span>
+            </div>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse d-md-block" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFooter1">
+            <div class="my-1"><span class="d-block inter text-14-4">AGRIDEN</span><span>Via Bitonto,43,70026 Modugno
               BA</span></div>
-          <div class="my-1"><span class=" text-14-4">P.Iva: 00000000</span></div>
-          <div class="my-1"><span class=" text-14-4">N Rea: 000000</span></div>
-          <div class="my-1"><span class=" text-14-4">Chi siamo</span></div>
-          <div class="my-1"><span class=" text-14-4">Contatto</span></div>
-          <div class="my-1"><span class=" text-14-4">Blog</span></div>
+            <div class="my-1"><span class=" text-14-4">P.Iva: 00000000</span></div>
+            <div class="my-1"><span class=" text-14-4">N Rea: 000000</span></div>
+            <div class="my-1"><span class=" text-14-4">Chi siamo</span></div>
+            <div class="my-1"><span class=" text-14-4">Contatto</span></div>
+            <div class="my-1"><span class=" text-14-4">Blog</span></div>
+          </div>
         </div>
       </div>
     </div>
@@ -850,7 +1035,11 @@
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        992: {
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1199: {
           slidesPerView: 5,
           spaceBetween: 20,
         },
@@ -875,7 +1064,11 @@
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        992: {
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1199: {
           slidesPerView: 5,
           spaceBetween: 20,
         },
@@ -901,7 +1094,11 @@
           slidesPerView: 2,
           spaceBetween: 20,
         },
-        992: {
+        991: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1199: {
           slidesPerView: 5,
           spaceBetween: 20,
         },
@@ -929,6 +1126,66 @@
       },
     });
   </script>
+
+<script>
+  var swiper = new Swiper(".mySwiper-slide1", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+    });
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper-slide2", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper-slide3", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+  });
+</script>
+
+<script>
+  var swiper = new Swiper(".mySwiper-slide4", {
+    slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      }
+  });
+</script>
 </body>
 
 </html>

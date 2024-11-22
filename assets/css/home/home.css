@@ -3,6 +3,12 @@
 
 /* Navbar */
 .header{
+  .info-head{
+    .icon{
+    width: 18px;
+    height: 18px;      
+    }
+  }
   .iconbar{
     .icon{
       width: 18px;
@@ -79,36 +85,38 @@ header span{
 
 
 
-
-form{
- padding: 0 16px;
-  div{
-   height: 40px;
-   border-radius: 18px;
-   padding:0 10px;
-   input{
-    font-size: 1rem;
-    border: none;
-    background-color: transparent;
-    font-weight: 575;
-    width: 100%;
-    height: 30px;
+.header{
+  form{
+    padding: 0 16px;
+     div{
+      height: 40px;
+      border-radius: 18px;
+      padding:0 10px;
+      input{
+       font-size: 1rem;
+       border: none;
+       background-color: transparent;
+       font-weight: 575;
+       width: 100%;
+       height: 30px;
+      }
+   
+   
+      button{
+       border:none;
+       border-radius:18px ;
+       width: 50px;
+      }
+     }
    }
-
-
-   button{
-    border:none;
-    border-radius:18px ;
-    width: 50px;
+   
+   @media (min-width: 768px){
+    form{
+     width: 440px;
+    }
    }
-  }
 }
 
-@media (min-width: 768px){
- form{
-  width: 440px;
- }
-}
 
 nav{
  font-size: 0.625rem;
@@ -265,27 +273,27 @@ dialog[open] {
     gap: 10px;
     margin-top: 30px;
     padding:0;
-    div{
-      border: 2px solid var(--color-primary);
-      width: 100%;
-      height:50px;
-      border-radius: 5px;
-      padding: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      img{
-        width: 30px;
-        padding-right: 5px;
-      }
-      input{
-        border:none;
-        width:100%;
-        height: 100%;
-        font-size: 16px;
-        padding-left: 10px;
-        font-weight: 500;
-      }
+    .input{
+        border: 2px solid var(--color-primary);
+        width: 100%;
+        height:50px;
+        border-radius: 5px;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+          width: 30px;
+          padding-right: 5px;
+        }
+        input{
+          border:none;
+          width:100%;
+          height: 100%;
+          font-size: 16px;
+          padding-left: 10px;
+          font-weight: 500;
+        }
     }
   }
   .buttons{
@@ -397,20 +405,20 @@ dialog[open] {
 }
 
 #ModalOfferte .buttons{
-  margin: 20px 0 0 0;
-  gap: 20px;
-  color: white;
-  height: 90px;
-  .evidenzia{
-    padding: 10px 10px;
-    background-color: var(--color-primary);
-    border-radius: 5px;
-  }
-  .offerta{
-    padding: 10px 10px;
-    background-color: var(--color-orange);
-    border-radius: 5px;
-  }
+  display: inline-block; /* Cambia da inline a inline-block per garantire che il contenitore sia "hoverable" */
+  transition: transform 0.3s ease; /* Anima la trasformazione */
+}
+#ModalOfferte .info-menu{
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+
+#ModalOfferte .info-menu:hover{
+  color: var(--color-orange);
+}
+
+#ModalOfferte .info-menu:hover{
+  color: var(--color-orange);
 }
 
 #ModalOfferte .giardinaggio{
@@ -607,12 +615,25 @@ dialog[open] {
 
 .slide1{
 height: 174px;
-background-image: url("../../img/carosello-desk.png");
 
 }
+
+.img1{
+  background-image: url("../../img/carosello-desk.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .slide2{
  height: 200px;
+}
+
+.img2{
  background-image: url("../../img/carosello1-desk.png");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .card{
@@ -657,6 +678,13 @@ background-image: url("../../img/carosello-desk.png");
  border-radius: 8px;
 }
 
+.mySwiper-slide3 .swiper-slide{
+  height: 150px;
+}
+
+.mySwiper-slide4 .swiper-slide{
+  height: 150px;
+}
 
 @media (min-width: 576px){
  .card h2{
@@ -669,6 +697,16 @@ background-image: url("../../img/carosello-desk.png");
  .card #offerta{
   border-radius: 4px;
  }
+
+ .mySwiper-slide3 .swiper-slide{
+  height: 112px;
+}
+
+.mySwiper-slide4 .swiper-slide{
+  height: 112px;
+}
+
+
 }
 
 @media (min-width: 768px){
@@ -707,6 +745,38 @@ background-image: url("../../img/carosello-desk.png");
     }
   }
  }
+ .mySwiper-slide3 .swiper-slide{
+  height: 160px;
+  }
+  
+  .mySwiper-slide4 .swiper-slide{
+    height: 160px;
+    }
+    
+}
+
+.slides{
+  .swiper-button-prev {
+    background-image: url("../../img/icon/white/Chevron-1.svg");
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 1;
+    transition: 0.2s ease-in-out;
+  }
+  .swiper-button-prev:hover{
+    transform: scale(1.1);
+  }
+  
+  .swiper-button-next {
+    background-image: url("../../img/icon/white/Chevron.svg");
+    background-color: rgb(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 1;
+    transition: 0.2s ease-in-out;
+  }
+  .swiper-button-next:hover{
+    transform: scale(1.1);
+  }
 }
 
 
@@ -751,22 +821,16 @@ background-image: url("../../img/carosello-desk.png");
    border-radius: 4px;
   }
  
-  #offerta{
-    height: 40%;
-  }
-  .card{
-   margin-top: 0px;
-   height: 160px;
-   height: 60%;
-   div{
-     height: 100%;
-     span{
-       padding-top: 10px;
-       font-weight: 600; 
-       font-size: 16px;
-     }
-   }
-  }
+
+
+  .mySwiper-slide3 .swiper-slide{
+    height: 305px;
+    }
+
+  .mySwiper-slide4 .swiper-slide{
+    height: 218px;
+    }
+
  }
 
 
@@ -982,6 +1046,14 @@ background-image: url("../../img/carosello-desk.png");
     left: 14px;
   }
 
+  
+  .btn-aggiungi{
+    background-color: var(--color-secondary);
+    border-radius: 100px;
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+
   .fiore{
     width: 34.14px;
     height: 36px;
@@ -1050,9 +1122,15 @@ background-image: url("../../img/carosello-desk.png");
         bottom: 0;
       }
     }
+    .btn-aggiungi:active{
+      background-color: var(--color-primary);
+    }
 
   }
 }
+
+
+
 
 @media (min-width: 992px){
   .categoriaImage{
@@ -1060,6 +1138,40 @@ background-image: url("../../img/carosello-desk.png");
       height: 427.52px;
     }
   }
+
+  .RowCard2 {
+    max-height: 543.46px;
+    .layout-btn-aggiungi {
+      opacity: 0; 
+      max-height: 0; 
+      visibility: hidden; 
+      padding: 0; 
+      transition: opacity 0.3s ease-in, max-height 0.3s ease-in; 
+    }
+    
+    .layoutCard {
+      position: relative; 
+    }
+    
+    .layoutCard:hover .layout-btn-aggiungi {
+      opacity: 1;
+      max-height: 500px;
+      visibility: visible; 
+      padding: 10px; 
+    }
+
+    .btn-aggiungi{
+      transition: 0.2s ease-in-out;
+    }
+    .btn-aggiungi:hover{
+      background-color: var(--color-primary);
+    }
+
+
+    
+  }
+
+  
 }
 
 @media (min-width: 1200px){
@@ -1206,6 +1318,42 @@ background-image: url("../../img/carosello-desk.png");
   .anteprima{
     width: min(100%, 264px);
   }
+
+  .chevron{
+    width: 12px;
+    height: 12px;
+  }
+
+
+  .accordion-icon {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  .accordion-button:not(.collapsed) .accordion-icon {
+    transform: rotate(180deg); /* Ruota la freccia quando espanso */
+  }
+  
+  .custom-accordion-button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Allinea il contenuto a sinistra */
+    gap: 10px; /* Aggiunge uno spazio tra la parola e l'icona */
+  }
+  
+  .accordion-icon {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .accordion-button:not(.collapsed) .accordion-icon {
+    transform: rotate(180deg); /* Ruota la freccia quando espanso */
+  }
+
+  input{
+    background-color: transparent;
+    border: none;
+  }
+  
   .label-checkbox{
     span{
       white-space: nowrap;         /* Impedisce il ritorno a capo */
